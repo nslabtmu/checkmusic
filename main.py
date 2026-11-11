@@ -22,6 +22,11 @@ def analyze_music(req: AnalysisRequest):
                 'format': 'bestaudio/best',
                 'outtmpl': 'temp_audio.%(ext)s',
                 'cookiefile': 'cookies.txt',
+                'extractor_args': {
+                    'youtube': {
+                        'player_client': ['mweb', 'android', 'web']
+                    }
+                },
                 'postprocessors': [{
                     'key': 'FFmpegExtractAudio',
                     'preferredcodec': 'mp3',
