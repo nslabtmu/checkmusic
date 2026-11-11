@@ -21,6 +21,7 @@ def analyze_music(req: AnalysisRequest):
             ydl_opts = {
                 'format': 'bestaudio/best',
                 'outtmpl': 'temp_audio.%(ext)s',
+                'cookiefile': 'cookies.txt',
                 'postprocessors': [{
                     'key': 'FFmpegExtractAudio',
                     'preferredcodec': 'mp3',
