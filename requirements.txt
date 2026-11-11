@@ -2,6 +2,6 @@ fastapi
 uvicorn
 librosa
 numpy
-yt-dlp
+yt-dlp[default]
 requests
 soundfile
